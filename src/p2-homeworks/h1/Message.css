@@ -1,0 +1,65 @@
+.home__work1 {
+    background-color: darkolivegreen;
+    padding: 50px;
+}
+.message {
+    display: flex;
+}
+.message__logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.message__logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message__content {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 7px;
+    float: left;
+    position: relative;
+}
+
+
+.message__content::after, .message__content::before {
+    content: "";
+    position: absolute;
+    right: 89%;
+    bottom: 0;
+    width: 1.8em;
+    height: 1.8em;
+    border: .5em solid transparent;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.message__content::before {
+    border-top: none;
+    height: .4em;
+    border-radius: 1% 1% 50% 50% / 1% 1% 100% 100%;
+    background: black;
+    border-color: black;
+    margin-left: -2em;
+}
+
+.message__name {
+    color: mediumpurple;
+    padding: 5px 0;
+}
+.message__message {
+    color: darkgray;
+}
+.message__time {
+    color: gray;
+    padding: 8px 0 0 8px;
+}
+
+.message__info {
+    display: flex;
+}
